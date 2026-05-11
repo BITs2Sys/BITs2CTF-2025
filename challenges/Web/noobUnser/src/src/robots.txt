@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /h3r3.php
+
+
+User-agent: Yandex
+Disallow: *

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  test:
+    image: lamaper/ctf-babep1ckle:v0.1
+    build: ../
+    ports:
+      # 设置了暴露端口
+      - 8080:8080
+    restart: unless-stopped
+    volumes:
+      - ../src:/app  # 将本地src目录挂载到容器的/app目录

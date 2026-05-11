@@ -1,0 +1,1 @@
+<p>Congratulations! This new party is for you only. Please go /flag to get your reward!</p>

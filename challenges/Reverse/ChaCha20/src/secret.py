@@ -1,0 +1,1 @@
+flag=b'BITs2CTF{pyc_reverse_is_important}'

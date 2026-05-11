@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("../img/BITs2Sys.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;  /* 白字在暗色背景上更清晰 */
+}
+.overlay {
+    background: rgba(0,0,0,0.6); /* 半透明黑色遮罩 */
+    min-height: 100vh;           /* 撑满屏幕高度 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+h1, p {
+    margin-bottom: 1rem;
+}

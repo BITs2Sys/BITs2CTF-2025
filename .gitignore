@@ -1,0 +1,11 @@
+_release_assets/
+_work/
+*.tar.gz.tmp
+PPC-solution.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

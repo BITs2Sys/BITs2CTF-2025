@@ -1,0 +1,9 @@
+version: '3'
+services:
+  test:
+    image: lamaper/ctf-1zvm:v0.1
+    build: ../
+    ports:
+      # 设置了暴露端口
+      - 8888:3000
+    restart: unless-stopped

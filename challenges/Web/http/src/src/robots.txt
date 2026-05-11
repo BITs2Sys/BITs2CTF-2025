@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /r0b0t.php
+
+
+User-agent: Yandex
+Disallow: *

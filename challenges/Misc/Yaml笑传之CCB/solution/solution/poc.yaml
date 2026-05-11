@@ -1,0 +1,2 @@
+!!python/object/new:os.system
+args: ["bash"]
