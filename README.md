@@ -1,10 +1,9 @@
 # BITs2CTF 2025
 
-第一届北京理工大学 CTF 新生赛（BITs2CTF 2025）的官方归档仓库。
+BITs2CTF 2025暨第一届北京理工大学新生CTF赛官方归档。
 
 - **比赛时间**：2025-11-22 ~ 2025-11-23（UTC+8 09:00 ~ 次日 09:00）
-- **平台**：[GZCTF](https://github.com/GZTimeWalker/GZCTF)
-- **分组**：学生组、大一新生组
+- **比赛平台**：[GZCTF](https://github.com/GZTimeWalker/GZCTF)
 
 ## 目录结构
 
@@ -18,24 +17,22 @@ BITs2CTF-2025/
 │   ├── Reverse/  8 题
 │   └── PPC/      4 题
 │
-├── Writeups/                  # 所有提交 WriteUp 的战队 PDF（共 70 份），按战队名命名
-└── scoreboard.json            # 完赛后的官方排行榜（GZCTF API 原始返回）
+├── Writeups/                  # 所有战队的WriteUp
+└── scoreboard.json            # 排行榜
 ```
 
 每道题目目录的标准结构：
 
 ```
 <challenge>/
-├── description.md             # 题目描述（来自平台 Content 字段）
-├── 题目设计说明书.docx         # 出题人写的设计说明（部分题目缺失）
-├── src/                       # 题目源码（Dockerfile / 服务端代码 / 等）
-├── solution/                  # 题解（出题人的 WP / 解题脚本）
-├── attachment/                # 选手下载附件（如有）
+├── description.md             # 题目描述
+├── 题目设计说明书.docx         # 出题人写的设计说明
+├── src/                       # 题目源码
+├── solution/                  # 题解
+├── attachment/                # 选手下载附件
 ├── docker_image/              # 题目靶机镜像（见下方说明，仅含 README）
-└── _extras/                   # 出题人留下的辅助资料（图片、笔记等）
+└── _extras/                   # 其他资料
 ```
-
-并非所有题目都包含全部子目录——比如选择题只有 `description.md`，而部分题目的源码/题解没有归档。
 
 ## Docker 镜像
 
@@ -46,11 +43,7 @@ BITs2CTF-2025/
 docker load -i "<image-name>.tar.gz"
 ```
 
-## 排行榜
-
-`scoreboard.json` 是 GZCTF `/api/game/4/scoreboard` 的完整 JSON 输出，包含所有分组的实时积分曲线、最终排名、做题情况、一血/二血/三血加成（`bloodBonus = 31477770` 解码为 1st blood +3%、2nd +2%、3rd +1%）。
-
-## 技术栈速查
+## 题目列表
 
 | 类别 | 题目（实际比赛中） |
 |---|---|
